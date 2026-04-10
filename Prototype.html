@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Platinum Pharmaceuticals | Clinical Precision</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#2E3192",
+                        "secondary": "#4A6CF7",
+                        "accent": "#E53935",
+                        "on-primary-container": "#9da1ff",
+                        "surface-container": "#eceef1",
+                        "tertiary": "#590005",
+                        "primary-container": "#15157d",
+                        "background": "#f7f9fc",
+                        "on-surface": "#191c1e",
+                        "on-background": "#191c1e",
+                        "outline": "#777683",
+                        "outline-variant": "#c7c5d4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Manrope', sans-serif; }
+        .glass-header { backdrop-filter: blur(20px); }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .step-dashed-line {
+            background-image: linear-gradient(to right, #4A6CF7 33%, rgba(255,255,255,0) 0%);
+            background-position: bottom;
+            background-size: 15px 1px;
+            background-repeat: repeat-x;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface">
+<!-- Top Info Bar -->
+<div class="bg-primary-container text-white py-2 px-8 flex justify-between items-center text-xs font-label tracking-widest uppercase">
+<div class="flex gap-6">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>North Western Industrial Zone, Karachi</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[14px]">call</span>
+<span>+92 21 34750661</span>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex items-center gap-4">
+<span>ISO 9001:2015 Certified</span>
+<span class="w-px h-3 bg-white/30"></span>
+<span>GMP Compliant</span>
+</div>
+</div>
+</div>
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full z-50 bg-white/95 backdrop-blur-xl border-b border-slate-100">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-extrabold tracking-tight text-primary uppercase">
+                Platinum<span class="text-secondary">Pharma</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 hover:text-primary font-label text-[11px] uppercase tracking-widest font-semibold transition-colors" href="#">Products</a>
+<a class="text-slate-600 hover:text-primary font-label text-[11px] uppercase tracking-widest font-semibold transition-colors" href="#">Manufacturing</a>
+<a class="text-slate-600 hover:text-primary font-label text-[11px] uppercase tracking-widest font-semibold transition-colors" href="#">Research</a>
+<a class="text-slate-600 hover:text-primary font-label text-[11px] uppercase tracking-widest font-semibold transition-colors" href="#">Our Team</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="px-6 py-2.5 bg-primary text-white rounded-md text-[11px] font-bold uppercase tracking-wider hover:bg-secondary transition-all active:scale-95 shadow-md shadow-primary/20">Contact Us</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section (Modified Layout from IMAGE_4) -->
+<section class="relative bg-white pt-12 overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[600px]">
+<div class="z-10">
+<span class="text-secondary font-bold uppercase tracking-widest text-xs mb-4 block">Platinum Health Care Center</span>
+<h1 class="text-primary text-6xl md:text-7xl font-extrabold tracking-tighter mb-8 leading-[1.1]">
+                    Advanced Medicine.<br/>Compassionate Care.
+                </h1>
+<p class="text-slate-600 text-lg mb-10 max-w-lg leading-relaxed">
+                    Evolving from a premier retail pharmacy to a world-class manufacturer, delivering clinical precision since 1955.
+                </p>
+<div class="flex flex-wrap gap-4 items-center">
+<button class="bg-secondary hover:bg-primary text-white px-8 py-4 rounded-md font-bold uppercase tracking-widest text-xs transition-all flex items-center gap-2 shadow-lg shadow-secondary/20">
+                        Explore Products
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<div class="flex items-center gap-3 ml-4">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">call</span>
+</div>
+<div>
+<p class="text-[10px] text-slate-500 uppercase tracking-widest font-bold">Call Us Today</p>
+<p class="text-primary font-bold">+92 21 34750661</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="relative z-10 rounded-3xl overflow-hidden shadow-2xl">
+<img alt="Doctor profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNX4WNosEESm20YEC4cKbvwsGH5MG7WBtf04B42T9-CEzokw_Eq1qkGiVZV1J6_xIx4Vg0d9xAUm9WeROn9EKy0y697BetohSe3ELco-7HzQI_3eiECZXs-LMdXO-WuR5bkgD2EgPcHJKblaqYpIBSlCchLgrUJc4_HVvkz-lCoZKflni_lwM8XkOb6c4TRbLx8iyXLQGBBPoGOIwZKhA77kKeFn1VcbhsAk0fplja_NLfCi3NWHEkLGWSrQxlYntZLu4RHuQDbuVe"/>
+</div>
+<!-- Decorative elements from reference image -->
+<div class="absolute -bottom-6 -left-6 w-32 h-32 bg-secondary/10 rounded-full blur-2xl z-0"></div>
+<div class="absolute -top-6 -right-6 w-32 h-32 bg-primary/10 rounded-full blur-2xl z-0"></div>
+</div>
+</div>
+<!-- Floating Stats Bar (from IMAGE_4) -->
+<div class="max-w-7xl mx-auto px-8 relative -mb-20 mt-12 z-20">
+<div class="bg-primary-container rounded-2xl p-8 md:p-12 shadow-2xl flex flex-wrap justify-between items-center text-white gap-8 border border-white/10">
+<div class="max-w-xs">
+<h3 class="text-2xl font-bold mb-2">Our Only Priority Is To Keep You Healthy</h3>
+<p class="text-blue-200/60 text-xs">Serving international standards since 1955 with clinical excellence.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 flex-grow ml-8">
+<div class="flex items-center gap-4">
+<div class="p-3 bg-white/10 rounded-lg"><span class="material-symbols-outlined text-secondary">medical_services</span></div>
+<div><div class="text-2xl font-bold">69+</div><div class="text-[9px] uppercase tracking-widest opacity-60">Years Heritage</div></div>
+</div>
+<div class="flex items-center gap-4">
+<div class="p-3 bg-white/10 rounded-lg"><span class="material-symbols-outlined text-secondary">award_star</span></div>
+<div><div class="text-2xl font-bold">13</div><div class="text-[9px] uppercase tracking-widest opacity-60">Quality Awards</div></div>
+</div>
+<div class="flex items-center gap-4">
+<div class="p-3 bg-white/10 rounded-lg"><span class="material-symbols-outlined text-secondary">science</span></div>
+<div><div class="text-2xl font-bold">217K+</div><div class="text-[9px] uppercase tracking-widest opacity-60">Sq Ft Facility</div></div>
+</div>
+<div class="flex items-center gap-4">
+<div class="p-3 bg-white/10 rounded-lg"><span class="material-symbols-outlined text-secondary">public</span></div>
+<div><div class="text-2xl font-bold">Global</div><div class="text-[9px] uppercase tracking-widest opacity-60">Distribution</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Medical Services (Modified Grid from IMAGE_3) -->
+<section class="bg-primary-container pt-48 pb-24 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<span class="text-secondary font-bold uppercase tracking-widest text-[10px] mb-4 block">Capabilities</span>
+<h2 class="text-white text-4xl font-bold tracking-tight">We Cover A Big Variety Of <br/>Medical Manufacturing</h2>
+</div>
+<div class="flex gap-4">
+<button class="px-6 py-3 bg-white/10 text-white rounded-md text-[10px] font-bold uppercase tracking-wider hover:bg-white hover:text-primary transition-all flex items-center gap-2">Read More <span class="material-symbols-outlined text-sm">arrow_outward</span></button>
+<button class="px-6 py-3 bg-secondary text-white rounded-md text-[10px] font-bold uppercase tracking-wider hover:bg-white hover:text-primary transition-all">All Products</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Cardiology -> Capsules -->
+<div class="bg-white/5 border border-white/10 p-10 rounded-2xl hover:bg-secondary transition-all group">
+<div class="w-16 h-16 bg-white/10 rounded-xl flex items-center justify-center mb-8 text-secondary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">pill</span>
+</div>
+<h3 class="text-white text-xl font-bold mb-4">Solid Dosage</h3>
+<p class="text-blue-100/60 text-sm leading-relaxed mb-6 group-hover:text-white/80">Tablets and capsules manufactured in temperature-controlled environments.</p>
+</div>
+<div class="bg-white/5 border border-white/10 p-10 rounded-2xl hover:bg-secondary transition-all group">
+<div class="w-16 h-16 bg-white/10 rounded-xl flex items-center justify-center mb-8 text-secondary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">vaccines</span>
+</div>
+<h3 class="text-white text-xl font-bold mb-4">Sterile Liquids</h3>
+<p class="text-blue-100/60 text-sm leading-relaxed mb-6 group-hover:text-white/80">Advanced synthesis for injectable solutions and high-purity liquid medicines.</p>
+</div>
+<div class="bg-white/5 border border-white/10 p-10 rounded-2xl hover:bg-secondary transition-all group">
+<div class="w-16 h-16 bg-white/10 rounded-xl flex items-center justify-center mb-8 text-secondary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">vaccines</span>
+</div>
+<h3 class="text-white text-xl font-bold mb-4">Research Lab</h3>
+<p class="text-blue-100/60 text-sm leading-relaxed mb-6 group-hover:text-white/80">Constant development of new formulas following FDA and ISO guidelines.</p>
+</div>
+<div class="bg-white/5 border border-white/10 p-10 rounded-2xl hover:bg-secondary transition-all group">
+<div class="w-16 h-16 bg-white/10 rounded-xl flex items-center justify-center mb-8 text-secondary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">clinical_notes</span>
+</div>
+<h3 class="text-white text-xl font-bold mb-4">Clinical Trials</h3>
+<p class="text-blue-100/60 text-sm leading-relaxed mb-6 group-hover:text-white/80">Ensuring safety and efficacy through rigorous clinical testing protocols.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us / Service Circle (from IMAGE_3) -->
+<section class="py-24 px-8 bg-white relative overflow-hidden">
+<div class="max-w-7xl mx-auto text-center mb-20">
+<span class="text-secondary font-bold uppercase tracking-widest text-[10px] mb-4 block">Trusted Source for Pharma</span>
+<h2 class="text-primary text-5xl font-extrabold tracking-tighter">Why Choose Platinum Pharma?</h2>
+</div>
+<div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+<!-- Left Side Features -->
+<div class="space-y-16">
+<div class="text-right flex items-center justify-end gap-6 group">
+<div>
+<h4 class="text-primary font-bold mb-2">Quality Standards</h4>
+<p class="text-slate-500 text-sm">ISO 9001:2015 and GMP compliant manufacturing.</p>
+</div>
+<div class="w-12 h-12 rounded-full border border-secondary/20 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-all shadow-lg">
+<span class="material-symbols-outlined">verified</span>
+</div>
+</div>
+<div class="text-right flex items-center justify-end gap-6 group">
+<div>
+<h4 class="text-primary font-bold mb-2">Modern Facility</h4>
+<p class="text-slate-500 text-sm">217,776 sq ft of advanced production floor space.</p>
+</div>
+<div class="w-12 h-12 rounded-full border border-secondary/20 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-all shadow-lg">
+<span class="material-symbols-outlined">factory</span>
+</div>
+</div>
+<div class="text-right flex items-center justify-end gap-6 group">
+<div>
+<h4 class="text-primary font-bold mb-2">National Reach</h4>
+<p class="text-slate-500 text-sm">Robust distribution network across the country.</p>
+</div>
+<div class="w-12 h-12 rounded-full border border-secondary/20 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-all shadow-lg">
+<span class="material-symbols-outlined">local_shipping</span>
+</div>
+</div>
+</div>
+<!-- Central Circle Graphic -->
+<div class="relative flex justify-center py-20">
+<div class="w-80 h-80 rounded-full border-[12px] border-slate-100 flex items-center justify-center relative">
+<div class="w-64 h-64 rounded-full border-4 border-dashed border-secondary/30 flex items-center justify-center animate-[spin_30s_linear_infinite]"></div>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<div class="w-24 h-24 bg-primary rounded-full flex items-center justify-center text-white shadow-2xl z-10">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+</div>
+<div class="absolute w-full h-full flex items-center justify-center">
+<div class="text-primary font-bold text-xs uppercase tracking-tighter absolute -rotate-90 origin-center translate-x-32">Clinical Service</div>
+<div class="text-primary font-bold text-xs uppercase tracking-tighter absolute rotate-90 origin-center -translate-x-32">Medical Support</div>
+<div class="text-primary font-bold text-xs uppercase tracking-tighter absolute origin-center translate-y-32">Patient Care</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Side Features -->
+<div class="space-y-16">
+<div class="flex items-center gap-6 group">
+<div class="w-12 h-12 rounded-full border border-secondary/20 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-all shadow-lg">
+<span class="material-symbols-outlined">groups</span>
+</div>
+<div>
+<h4 class="text-primary font-bold mb-2">Expert Team</h4>
+<p class="text-slate-500 text-sm">Industry leaders and research specialists.</p>
+</div>
+</div>
+<div class="flex items-center gap-6 group">
+<div class="w-12 h-12 rounded-full border border-secondary/20 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-all shadow-lg">
+<span class="material-symbols-outlined">biotech</span>
+</div>
+<div>
+<h4 class="text-primary font-bold mb-2">Innovative R&amp;D</h4>
+<p class="text-slate-500 text-sm">Pioneering breakthrough medical treatments.</p>
+</div>
+</div>
+<div class="flex items-center gap-6 group">
+<div class="w-12 h-12 rounded-full border border-secondary/20 flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-all shadow-lg">
+<span class="material-symbols-outlined">history_edu</span>
+</div>
+<div>
+<h4 class="text-primary font-bold mb-2">Legacy of Trust</h4>
+<p class="text-slate-500 text-sm">Decades of commitment to reliable results.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- How We Work / Process (from IMAGE_2) -->
+<section class="bg-primary pt-24 pb-32 px-8 overflow-hidden relative">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start mb-20 gap-8">
+<div class="max-w-xl">
+<span class="text-secondary font-bold uppercase tracking-widest text-[10px] mb-4 block">Manufacturing Process</span>
+<h2 class="text-white text-5xl font-bold tracking-tight">Pharmacy to Wholesaler Progress Story</h2>
+</div>
+<p class="text-blue-100/60 max-w-sm text-sm">Following the journey of precision from raw material synthesis to your local pharmaceutical provider.</p>
+</div>
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+<!-- Process Step 1 -->
+<div class="relative group">
+<div class="bg-white/5 border border-white/10 p-10 rounded-2xl h-full relative z-10">
+<div class="flex justify-between items-start mb-8">
+<div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-2xl">science</span>
+</div>
+<span class="text-white/20 font-black text-4xl">01</span>
+</div>
+<h4 class="text-white font-bold text-lg mb-4">Raw Synthesis</h4>
+<p class="text-blue-100/60 text-sm leading-relaxed">Starting with chemical precision in our high-tech labs to ensure pure active ingredients.</p>
+</div>
+<div class="hidden md:block absolute top-1/2 -right-4 w-8 h-px border-t border-dashed border-secondary/30 z-0"></div>
+</div>
+<!-- Process Step 2 -->
+<div class="mt-8 md:mt-12 relative group">
+<div class="bg-white/5 border border-white/10 p-10 rounded-2xl h-full relative z-10">
+<div class="flex justify-between items-start mb-8">
+<div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-2xl">precision_manufacturing</span>
+</div>
+<span class="text-white/20 font-black text-4xl">02</span>
+</div>
+<h4 class="text-white font-bold text-lg mb-4">Production Floor</h4>
+<p class="text-blue-100/60 text-sm leading-relaxed">Mass manufacturing using automated systems in our 217k sq ft facility.</p>
+</div>
+<div class="hidden md:block absolute top-1/2 -right-4 w-8 h-px border-t border-dashed border-secondary/30 z-0"></div>
+</div>
+<!-- Process Step 3 -->
+<div class="relative group">
+<div class="bg-white/5 border border-white/10 p-10 rounded-2xl h-full relative z-10">
+<div class="flex justify-between items-start mb-8">
+<div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-2xl">verified_user</span>
+</div>
+<span class="text-white/20 font-black text-4xl">03</span>
+</div>
+<h4 class="text-white font-bold text-lg mb-4">Quality Assurance</h4>
+<p class="text-blue-100/60 text-sm leading-relaxed">Rigorous batch testing to meet international GMP and ISO certifications.</p>
+</div>
+<div class="hidden md:block absolute top-1/2 -right-4 w-8 h-px border-t border-dashed border-secondary/30 z-0"></div>
+</div>
+<!-- Process Step 4 -->
+<div class="mt-8 md:mt-12 relative group">
+<div class="bg-white/5 border border-white/10 p-10 rounded-2xl h-full relative z-10">
+<div class="flex justify-between items-start mb-8">
+<div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-2xl">local_shipping</span>
+</div>
+<span class="text-white/20 font-black text-4xl">04</span>
+</div>
+<h4 class="text-white font-bold text-lg mb-4">Global Reach</h4>
+<p class="text-blue-100/60 text-sm leading-relaxed">Distributed through our robust logistics network to wholesalers nationwide.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Section (from IMAGE_5) -->
+<section class="py-24 px-8 bg-background">
+<div class="max-w-7xl mx-auto flex justify-between items-end mb-16">
+<div>
+<span class="text-secondary font-bold uppercase tracking-widest text-[10px] mb-4 block">Our Team</span>
+<h2 class="text-primary text-4xl font-bold tracking-tight">Meet Our Pharmaceutical Leaders</h2>
+</div>
+<button class="px-8 py-3 bg-primary text-white rounded-md text-[10px] font-bold uppercase tracking-wider flex items-center gap-2">View All Team <span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+</div>
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm group">
+<div class="h-80 bg-slate-200 relative overflow-hidden">
+<img alt="Dr. Salman Khan" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMnsMBdSC9cP6DDO5QyTZDcJhhewMwz-37tWBJIX3ypdThTP9npue8CTOue1H5nSxfsapYGCPRUVCSQffaRVQ4FqW4tSgMopTehPl_6txdywZo9sw37Fkp2XOt4oQOm6xzSmG-tyCcM2pMdu7IDFiKFyaVvDadL5U2IE0_dm2rngDImyAlA874VO1EccviHIuG9U2PmXJ32p5HmR4Gcl3RvzYYxMt3otfxmyGi-L1uSJMymSq69CCwHwXMHVDL7CGiG-WS5O9wabr3"/>
+<div class="absolute bottom-4 left-4 right-4 bg-primary p-4 rounded-xl translate-y-20 group-hover:translate-y-0 transition-transform">
+<div class="flex justify-between items-center text-white">
+<div><p class="font-bold text-sm">Dr. Salman Khan</p><p class="text-[10px] opacity-70 uppercase tracking-widest">Chief Researcher</p></div>
+<span class="material-symbols-outlined text-sm">share</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm group">
+<div class="h-80 bg-slate-200 relative overflow-hidden">
+<img alt="Fatima Ali" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNX4WNosEESm20YEC4cKbvwsGH5MG7WBtf04B42T9-CEzokw_Eq1qkGiVZV1J6_xIx4Vg0d9xAUm9WeROn9EKy0y697BetohSe3ELco-7HzQI_3eiECZXs-LMdXO-WuR5bkgD2EgPcHJKblaqYpIBSlCchLgrUJc4_HVvkz-lCoZKflni_lwM8XkOb6c4TRbLx8iyXLQGBBPoGOIwZKhA77kKeFn1VcbhsAk0fplja_NLfCi3NWHEkLGWSrQxlYntZLu4RHuQDbuVe"/>
+<div class="absolute bottom-4 left-4 right-4 bg-primary p-4 rounded-xl translate-y-20 group-hover:translate-y-0 transition-transform">
+<div class="flex justify-between items-center text-white">
+<div><p class="font-bold text-sm">Fatima Ali</p><p class="text-[10px] opacity-70 uppercase tracking-widest">Quality Assurance</p></div>
+<span class="material-symbols-outlined text-sm">share</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm group">
+<div class="h-80 bg-slate-200 relative overflow-hidden">
+<img alt="Dr. Bilal Ahmed" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMnsMBdSC9cP6DDO5QyTZDcJhhewMwz-37tWBJIX3ypdThTP9npue8CTOue1H5nSxfsapYGCPRUVCSQffaRVQ4FqW4tSgMopTehPl_6txdywZo9sw37Fkp2XOt4oQOm6xzSmG-tyCcM2pMdu7IDFiKFyaVvDadL5U2IE0_dm2rngDImyAlA874VO1EccviHIuG9U2PmXJ32p5HmR4Gcl3RvzYYxMt3otfxmyGi-L1uSJMymSq69CCwHwXMHVDL7CGiG-WS5O9wabr3"/>
+<div class="absolute bottom-4 left-4 right-4 bg-primary p-4 rounded-xl translate-y-20 group-hover:translate-y-0 transition-transform">
+<div class="flex justify-between items-center text-white">
+<div><p class="font-bold text-sm">Dr. Bilal Ahmed</p><p class="text-[10px] opacity-70 uppercase tracking-widest">Lab Director</p></div>
+<span class="material-symbols-outlined text-sm">share</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm group">
+<div class="h-80 bg-slate-200 relative overflow-hidden">
+<img alt="Sana Malik" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNX4WNosEESm20YEC4cKbvwsGH5MG7WBtf04B42T9-CEzokw_Eq1qkGiVZV1J6_xIx4Vg0d9xAUm9WeROn9EKy0y697BetohSe3ELco-7HzQI_3eiECZXs-LMdXO-WuR5bkgD2EgPcHJKblaqYpIBSlCchLgrUJc4_HVvkz-lCoZKflni_lwM8XkOb6c4TRbLx8iyXLQGBBPoGOIwZKhA77kKeFn1VcbhsAk0fplja_NLfCi3NWHEkLGWSrQxlYntZLu4RHuQDbuVe"/>
+<div class="absolute bottom-4 left-4 right-4 bg-primary p-4 rounded-xl translate-y-20 group-hover:translate-y-0 transition-transform">
+<div class="flex justify-between items-center text-white">
+<div><p class="font-bold text-sm">Sana Malik</p><p class="text-[10px] opacity-70 uppercase tracking-widest">Ops Manager</p></div>
+<span class="material-symbols-outlined text-sm">share</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials (from IMAGE_6) -->
+<section class="py-24 px-8 bg-white border-y border-slate-100">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-center">
+<div class="w-full md:w-1/2 rounded-3xl overflow-hidden shadow-2xl">
+<img alt="Lab scientists collaboration" class="w-full h-[450px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNX4WNosEESm20YEC4cKbvwsGH5MG7WBtf04B42T9-CEzokw_Eq1qkGiVZV1J6_xIx4Vg0d9xAUm9WeROn9EKy0y697BetohSe3ELco-7HzQI_3eiECZXs-LMdXO-WuR5bkgD2EgPcHJKblaqYpIBSlCchLgrUJc4_HVvkz-lCoZKflni_lwM8XkOb6c4TRbLx8iyXLQGBBPoGOIwZKhA77kKeFn1VcbhsAk0fplja_NLfCi3NWHEkLGWSrQxlYntZLu4RHuQDbuVe"/>
+</div>
+<div class="w-full md:w-1/2">
+<div class="flex gap-1 text-secondary mb-6">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<h3 class="text-3xl font-bold text-primary mb-6 leading-tight">"Platinum Pharmaceuticals has been our trusted partner for over 15 years. Their consistency in medicine quality and professional logistics is unmatched in the region."</h3>
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-slate-200 overflow-hidden">
+<img alt="Client avatar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMnsMBdSC9cP6DDO5QyTZDcJhhewMwz-37tWBJIX3ypdThTP9npue8CTOue1H5nSxfsapYGCPRUVCSQffaRVQ4FqW4tSgMopTehPl_6txdywZo9sw37Fkp2XOt4oQOm6xzSmG-tyCcM2pMdu7IDFiKFyaVvDadL5U2IE0_dm2rngDImyAlA874VO1EccviHIuG9U2PmXJ32p5HmR4Gcl3RvzYYxMt3otfxmyGi-L1uSJMymSq69CCwHwXMHVDL7CGiG-WS5O9wabr3"/>
+</div>
+<div>
+<p class="text-primary font-bold">Haris Sheikh</p>
+<p class="text-slate-500 text-xs uppercase tracking-widest font-semibold">Director, National Health Wholesalers</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Research Breakthroughs (from IMAGE_5) -->
+<section class="py-24 px-8 bg-background">
+<div class="max-w-7xl mx-auto flex justify-between items-end mb-16">
+<div>
+<span class="text-secondary font-bold uppercase tracking-widest text-[10px] mb-4 block">Research &amp; Blog</span>
+<h2 class="text-primary text-4xl font-bold tracking-tight">Research Breakthrough News</h2>
+</div>
+<button class="px-8 py-3 bg-secondary text-white rounded-md text-[10px] font-bold uppercase tracking-wider">Read More <span class="material-symbols-outlined text-sm">arrow_outward</span></button>
+</div>
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow group">
+<div class="h-56 bg-slate-200 overflow-hidden">
+<img alt="Research 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNX4WNosEESm20YEC4cKbvwsGH5MG7WBtf04B42T9-CEzokw_Eq1qkGiVZV1J6_xIx4Vg0d9xAUm9WeROn9EKy0y697BetohSe3ELco-7HzQI_3eiECZXs-LMdXO-WuR5bkgD2EgPcHJKblaqYpIBSlCchLgrUJc4_HVvkz-lCoZKflni_lwM8XkOb6c4TRbLx8iyXLQGBBPoGOIwZKhA77kKeFn1VcbhsAk0fplja_NLfCi3NWHEkLGWSrQxlYntZLu4RHuQDbuVe"/>
+</div>
+<div class="p-8">
+<div class="flex items-center gap-2 text-slate-400 text-[10px] uppercase font-bold tracking-widest mb-4">
+<span class="material-symbols-outlined text-sm">calendar_month</span>
+<span>May 24, 2024</span>
+</div>
+<h4 class="text-primary font-bold text-xl mb-4 group-hover:text-secondary transition-colors">Breakthrough In Heart Disease Synthesis Treatment</h4>
+<p class="text-slate-500 text-sm leading-relaxed mb-6">Our R&amp;D team has developed a more stable formulation for chronic heart disease management medications.</p>
+<a class="text-primary font-bold text-[10px] uppercase tracking-widest flex items-center gap-2 hover:gap-3 transition-all" href="#">Read Full Article <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow group">
+<div class="h-56 bg-slate-200 overflow-hidden">
+<img alt="Research 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMnsMBdSC9cP6DDO5QyTZDcJhhewMwz-37tWBJIX3ypdThTP9npue8CTOue1H5nSxfsapYGCPRUVCSQffaRVQ4FqW4tSgMopTehPl_6txdywZo9sw37Fkp2XOt4oQOm6xzSmG-tyCcM2pMdu7IDFiKFyaVvDadL5U2IE0_dm2rngDImyAlA874VO1EccviHIuG9U2PmXJ32p5HmR4Gcl3RvzYYxMt3otfxmyGi-L1uSJMymSq69CCwHwXMHVDL7CGiG-WS5O9wabr3"/>
+</div>
+<div class="p-8">
+<div class="flex items-center gap-2 text-slate-400 text-[10px] uppercase font-bold tracking-widest mb-4">
+<span class="material-symbols-outlined text-sm">calendar_month</span>
+<span>May 18, 2024</span>
+</div>
+<h4 class="text-primary font-bold text-xl mb-4 group-hover:text-secondary transition-colors">Facility Expansion: New Sterile Unit Now Operational</h4>
+<p class="text-slate-500 text-sm leading-relaxed mb-6">Increasing our output of sterile liquid medicines by 40% with the new North Wing industrial unit.</p>
+<a class="text-primary font-bold text-[10px] uppercase tracking-widest flex items-center gap-2 hover:gap-3 transition-all" href="#">Read Full Article <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow group">
+<div class="h-56 bg-slate-200 overflow-hidden">
+<img alt="Research 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNX4WNosEESm20YEC4cKbvwsGH5MG7WBtf04B42T9-CEzokw_Eq1qkGiVZV1J6_xIx4Vg0d9xAUm9WeROn9EKy0y697BetohSe3ELco-7HzQI_3eiECZXs-LMdXO-WuR5bkgD2EgPcHJKblaqYpIBSlCchLgrUJc4_HVvkz-lCoZKflni_lwM8XkOb6c4TRbLx8iyXLQGBBPoGOIwZKhA77kKeFn1VcbhsAk0fplja_NLfCi3NWHEkLGWSrQxlYntZLu4RHuQDbuVe"/>
+</div>
+<div class="p-8">
+<div class="flex items-center gap-2 text-slate-400 text-[10px] uppercase font-bold tracking-widest mb-4">
+<span class="material-symbols-outlined text-sm">calendar_month</span>
+<span>May 12, 2024</span>
+</div>
+<h4 class="text-primary font-bold text-xl mb-4 group-hover:text-secondary transition-colors">Digital Logistics: AI Integration in Supply Chain</h4>
+<p class="text-slate-500 text-sm leading-relaxed mb-6">Implementing predictive analytics to ensure medical supplies reach remote areas on time.</p>
+<a class="text-primary font-bold text-[10px] uppercase tracking-widest flex items-center gap-2 hover:gap-3 transition-all" href="#">Read Full Article <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact / Map (from IMAGE_7) -->
+<section class="py-24 bg-white relative">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Info & Map -->
+<div class="lg:col-span-5 space-y-8">
+<div>
+<span class="text-secondary font-bold uppercase tracking-widest text-[10px] mb-4 block">We'd love to hear from you</span>
+<h2 class="text-primary text-5xl font-extrabold tracking-tighter mb-4">Let's Talk With Us!</h2>
+<p class="text-slate-500 text-sm">By submitting this form you are agreeing to our Privacy Policy. We guarantee not to disclose your information.</p>
+</div>
+<div class="bg-primary-container rounded-2xl p-10 text-white space-y-8 relative overflow-hidden">
+<div class="flex gap-6 items-start relative z-10">
+<div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-1">Contact Us</h4>
+<p class="text-blue-100/60 text-sm">For inquiries, please contact us at:<br/>info@platinumpharma.com</p>
+</div>
+</div>
+<div class="flex gap-6 items-start relative z-10">
+<div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-1">Address Medical</h4>
+<p class="text-blue-100/60 text-sm">A-20 North Western Industrial Zone,<br/>Bin Qasim Karachi, Pakistan.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start relative z-10">
+<div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-1">Work Time Information</h4>
+<p class="text-blue-100/60 text-sm">Monday - Saturday: 7:00am - 7:00pm<br/>Sunday: Closed</p>
+</div>
+</div>
+<div class="absolute bottom-0 right-0 opacity-10 -mr-12 -mb-12">
+<span class="material-symbols-outlined text-[300px]">factory</span>
+</div>
+</div>
+<div class="h-64 rounded-2xl overflow-hidden shadow-lg border border-slate-100">
+<img alt="Location Map" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMnsMBdSC9cP6DDO5QyTZDcJhhewMwz-37tWBJIX3ypdThTP9npue8CTOue1H5nSxfsapYGCPRUVCSQffaRVQ4FqW4tSgMopTehPl_6txdywZo9sw37Fkp2XOt4oQOm6xzSmG-tyCcM2pMdu7IDFiKFyaVvDadL5U2IE0_dm2rngDImyAlA874VO1EccviHIuG9U2PmXJ32p5HmR4Gcl3RvzYYxMt3otfxmyGi-L1uSJMymSq69CCwHwXMHVDL7CGiG-WS5O9wabr3"/>
+</div>
+</div>
+<!-- Form -->
+<div class="lg:col-span-7 bg-slate-50/50 p-12 rounded-3xl border border-slate-100">
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2">Your Name*</label>
+<input class="w-full px-6 py-4 rounded-xl border-slate-200 bg-white focus:ring-secondary focus:border-secondary outline-none transition-all" placeholder="Full Name" type="text"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2">Email Address*</label>
+<input class="w-full px-6 py-4 rounded-xl border-slate-200 bg-white focus:ring-secondary focus:border-secondary outline-none transition-all" placeholder="Email Address" type="email"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2">Phone Number*</label>
+<input class="w-full px-6 py-4 rounded-xl border-slate-200 bg-white focus:ring-secondary focus:border-secondary outline-none transition-all" placeholder="Phone Number" type="tel"/>
+</div>
+<div>
+<label class="block text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2">Inquiry Type*</label>
+<select class="w-full px-6 py-4 rounded-xl border-slate-200 bg-white focus:ring-secondary focus:border-secondary outline-none transition-all">
+<option>Product Inquiry</option>
+<option>Manufacturing Partnership</option>
+<option>Distribution Request</option>
+<option>Career Opportunities</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-[10px] font-bold uppercase tracking-widest text-slate-400 mb-2">Message...</label>
+<textarea class="w-full px-6 py-4 rounded-xl border-slate-200 bg-white focus:ring-secondary focus:border-secondary outline-none transition-all" placeholder="Your Message" rows="6"></textarea>
+</div>
+<div class="flex items-center gap-3">
+<input class="w-5 h-5 rounded text-secondary focus:ring-secondary border-slate-300" id="agree" type="checkbox"/>
+<label class="text-sm text-slate-500" for="agree">Agree to our terms and conditions</label>
+</div>
+<button class="bg-primary text-white px-10 py-5 rounded-xl font-bold uppercase tracking-widest text-xs flex items-center gap-3 shadow-xl shadow-primary/20 hover:bg-secondary transition-all" type="submit">
+                        Send Message
+                        <span class="material-symbols-outlined text-sm">send</span>
+</button>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary-container text-white">
+<!-- Top Footer CTA (from IMAGE_7) -->
+<div class="max-w-7xl mx-auto px-12 pt-20">
+<div class="bg-white/5 rounded-2xl p-8 flex flex-wrap justify-between items-center gap-8 border border-white/10">
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center animate-pulse">
+<span class="material-symbols-outlined text-white">notifications_active</span>
+</div>
+<div>
+<h4 class="text-xl font-bold">Important Updates Waiting For You</h4>
+<p class="text-blue-100/60 text-sm">We offer a wide range of healthcare services to meet your needs.</p>
+</div>
+</div>
+<div class="flex items-center bg-white rounded-full p-1.5 w-full md:w-auto overflow-hidden">
+<input class="bg-transparent border-none text-primary px-6 py-2 text-sm focus:ring-0 outline-none w-full md:w-64" placeholder="Your Email Address" type="email"/>
+<button class="bg-primary-container text-white px-8 py-3 rounded-full text-[10px] font-bold uppercase tracking-widest hover:bg-secondary transition-all">Subscribe Now</button>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 w-full max-w-7xl mx-auto">
+<div class="md:col-span-1">
+<div class="text-2xl font-black text-white uppercase mb-8">Platinum<span class="text-secondary">Pharma</span></div>
+<p class="text-blue-100/50 text-sm leading-relaxed mb-8">
+                    Since 1955, maintaining the highest standards of pharmaceutical manufacturing and clinical precision.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-primary transition-all group" href="#">
+<span class="material-symbols-outlined text-lg group-hover:scale-110 transition-transform">share</span>
+</a>
+</div>
+</div>
+<div class="md:col-span-1">
+<h4 class="text-[10px] tracking-widest font-bold uppercase text-white mb-8 border-b border-white/10 pb-4">Quick Links</h4>
+<ul class="space-y-4 font-label text-xs tracking-wider">
+<li><a class="text-blue-100/50 hover:text-white hover:translate-x-1 inline-block transition-all" href="#">Home</a></li>
+<li><a class="text-blue-100/50 hover:text-white hover:translate-x-1 inline-block transition-all" href="#">About Us</a></li>
+<li><a class="text-blue-100/50 hover:text-white hover:translate-x-1 inline-block transition-all" href="#">Our Products</a></li>
+<li><a class="text-blue-100/50 hover:text-white hover:translate-x-1 inline-block transition-all" href="#">Careers</a></li>
+</ul>
+</div>
+<div class="md:col-span-1">
+<h4 class="text-[10px] tracking-widest font-bold uppercase text-white mb-8 border-b border-white/10 pb-4">Compliance</h4>
+<ul class="space-y-4 font-label text-xs tracking-wider">
+<li><a class="text-blue-100/50 hover:text-white hover:translate-x-1 inline-block transition-all" href="#">Policy Statement</a></li>
+<li><a class="text-blue-100/50 hover:text-white hover:translate-x-1 inline-block transition-all" href="#">FDA Compliance</a></li>
+<li><a class="text-blue-100/50 hover:text-white hover:translate-x-1 inline-block transition-all" href="#">GMP Certifications</a></li>
+<li><a class="text-blue-100/50 hover:text-white hover:translate-x-1 inline-block transition-all" href="#">Pharmacovigilance</a></li>
+</ul>
+</div>
+<div class="md:col-span-1">
+<h4 class="text-[10px] tracking-widest font-bold uppercase text-white mb-8 border-b border-white/10 pb-4">Newsletter</h4>
+<p class="text-blue-100/50 text-xs mb-6">Stay updated with our latest pharmaceutical research and developments.</p>
+<div class="relative">
+<input class="bg-white/10 border-0 rounded-md w-full px-4 py-4 text-sm focus:ring-2 focus:ring-secondary outline-none placeholder:text-white/30" placeholder="Email Address" type="email"/>
+<button class="absolute right-2 top-1/2 -translate-y-1/2 bg-secondary text-white p-2 rounded-md hover:bg-white hover:text-primary transition-all">
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-white/5 text-center">
+<p class="text-[10px] font-label tracking-widest text-blue-100/30 uppercase">
+                © 2024 Platinum Pharmaceuticals. All Rights Reserved. Clinical Precision &amp; Tonal Depth.
+            </p>
+</div>
+</footer>
+</body></html>
